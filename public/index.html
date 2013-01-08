@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails: Welcome hrysd</title>
+    <title>Welcome hrysd.org</title>
     <style type="text/css" media="screen">
       body {
         margin: 0;
         margin-bottom: 25px;
         padding: 0;
-        background-color: #f0f0f0;
+        /*background-color: #f0f0f0;*/
         font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
         font-size: 13px;
-        color: #333;
+        /*color: #333;*/
       }
 
       h1 {
@@ -27,7 +27,7 @@
 
 
       #page {
-        background-color: #f0f0f0;
+        /*background-color: #f0f0f0;*/
         width: 750px;
         margin: 0;
         margin-left: auto;
@@ -36,7 +36,7 @@
 
       #content {
         float: left;
-        background-color: white;
+        /*background-color: white;*/
         border: 3px solid #aaa;
         border-top: none;
         padding: 25px;
@@ -170,19 +170,17 @@
       .filename {
         font-style: italic;
       }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
+
+      a {
+        text-decoration: none;
       }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascripts/jquery.x_x.js"></script>
+    <script type="text/javascript">
+      $().ready(function() {
+          $('body').x_x();
+      });
     </script>
   </head>
   <body>
@@ -205,11 +203,6 @@
         <div id="header">
           <h1>Welcome hrysd.org</h1>
           <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
         </div>
 
         <div id="getting-started">
