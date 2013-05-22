@@ -1,0 +1,41 @@
+!!!
+%html
+  %head
+    %meta{ charset: 'utf-8' }
+    %title= data.page.title || 'The Middleman'
+    = stylesheet_link_tag 'normalize', 'all'
+    = javascript_include_tag  'all'
+  %body{ class: page_classes }
+    %header{ role: 'banner' }
+      %h1= link_to ':soy_milk:', '/'
+      %nav
+        %ul
+          %li Twitter
+          %li Github
+          %li Archives
+    %div#content
+      = yield
+    %footer
+      - if paginate
+        - if prev_page
+          %p= link_to 'Previous page', prev_page
+        - if next_page
+          %p= link_to 'Next page', next_page
+    -#%aside
+    -#  %h2 Recent Articles
+    -#  %ol
+    -#    - blog.articles[0...10].each do |article|
+    -#      %li= link_to article.title, article
+    -#      %span= article.date.strftime('%b %e')
+
+    -#  %h2 Tags
+    -#  %ol
+    -#    - blog.tags.each do |tag, articles|
+    -#      %li= link_to tag, tag_path(tag)
+    -#      (#{articles.size})
+
+    -#  %h2 By Year
+    -#  %ol
+    -#    - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    -#      %li= link_to year, blog_year_path(year)
+    -#      (#{articles.size})
