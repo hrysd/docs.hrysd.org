@@ -3,24 +3,25 @@
   %head
     %meta{ charset: 'utf-8' }
     %title= data.page.title || 'The Middleman'
-    = stylesheet_link_tag 'normalize', 'all'
+    = stylesheet_link_tag 'all'
     = javascript_include_tag  'all'
   %body{ class: page_classes }
-    %header{ role: 'banner' }
-      %h1= link_to ':soy_milk:', '/'
-      %nav
-        %ul
-          %li Twitter
-          %li Github
-          %li Archives
-    %div#content
+    %div#container
+      %header{ role: 'banner' }
+        %h1= link_to ':soy_milk:', '/'
+        %nav
+          %ul
+            %li= link_to 'Twitter',  'https://twitter.com/hrysd'
+            %li= link_to 'Github',   'https://github.com/hrysd'
+            %li= link_to 'Archives', '#'
       = yield
-    %footer
-      - if paginate
-        - if prev_page
-          %p= link_to 'Previous page', prev_page
-        - if next_page
-          %p= link_to 'Next page', next_page
+      %footer
+        - if paginate
+          - if prev_page
+            %p= link_to 'Previous page', prev_page
+          - if next_page
+            %p= link_to 'Next page', next_page
+        %p.copyright @hrysd
     -#%aside
     -#  %h2 Recent Articles
     -#  %ol
