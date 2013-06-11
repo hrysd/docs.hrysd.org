@@ -3,17 +3,16 @@
   %head
     %meta{ charset: 'utf-8' }
     %title= data.page.title || 'The Middleman'
-    = stylesheet_link_tag 'all'
+    = stylesheet_link_tag 'application'
     = javascript_include_tag  'all'
   %body{ class: page_classes }
     %div#container
       %header{ role: 'banner' }
         %h1= link_to ':soy_milk:', '/'
-        %nav
-          %ul
-            %li= link_to 'Twitter',  'https://twitter.com/hrysd'
-            %li= link_to 'Github',   'https://github.com/hrysd'
-            %li= link_to 'Archives', '#'
+        %ul
+          %li= link_to 'Twitter',  'https://twitter.com/hrysd'
+          %li= link_to 'Github',   'https://github.com/hrysd'
+          %li= link_to 'Archives', '#'
       = yield
       %footer
         - if paginate
@@ -22,21 +21,3 @@
           - if next_page
             %p= link_to 'Next page', next_page
         %p.copyright @hrysd
-    -#%aside
-    -#  %h2 Recent Articles
-    -#  %ol
-    -#    - blog.articles[0...10].each do |article|
-    -#      %li= link_to article.title, article
-    -#      %span= article.date.strftime('%b %e')
-
-    -#  %h2 Tags
-    -#  %ol
-    -#    - blog.tags.each do |tag, articles|
-    -#      %li= link_to tag, tag_path(tag)
-    -#      (#{articles.size})
-
-    -#  %h2 By Year
-    -#  %ol
-    -#    - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-    -#      %li= link_to year, blog_year_path(year)
-    -#      (#{articles.size})

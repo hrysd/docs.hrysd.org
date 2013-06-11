@@ -5,4 +5,5 @@
     %header
       %h2= current_article.title
       %time= current_article.date.strftime('%Y-%m-%d (%a)')
-    = current_article.body
+    .content
+      = current_article.body
