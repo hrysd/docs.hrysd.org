@@ -54,3 +54,16 @@ redcarpet:
     - fenced_code_blocks
     - autolink
 ```
+
+## Assets Pipeline を使う
+
+gem `jekyll-assets` を使用する。
+
+- `_config.yml`
+
+```yaml
+gems:
+  - jekyll-assets
+```
+
+デフォルトで `_assets` のディレクトを見る模様。
