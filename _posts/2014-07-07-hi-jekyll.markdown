@@ -5,8 +5,6 @@ date:   2014-07-07 00:55:50
 categories: jekyll
 ---
 
-## Hi, Jekyll
-
 Jekyll を使ってみたので調べたこと流れをメモした。
 
 ### ビルドするまで
