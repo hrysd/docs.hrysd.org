@@ -9,9 +9,6 @@ exclude:
   - Gemfile.lock
   - vendor
 
-gems:
-  - jekyll-assets
-
 markdown: redcarpet
 
 redcarpet:
@@ -22,3 +19,6 @@ redcarpet:
 highlighter: rouge
 
 permalink: pretty
+
+sass:
+  sass_dir: assets/stylesheets
