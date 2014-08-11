@@ -1,11 +1,21 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<ul>
+  <li>
+    <span class='drawic drawic-github'></span>
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+    <a href="https://github.com/{{ site.github_username }}">
+      <span class='username'>{{ site.github_username }}</span>
+    </a>
+  </li>
+  <li>
+    <span class='drawic drawic-twitter'></span>
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+    <a href='https://twitter.com/{{ site.twitter_username }}'>
+      <span class='username'>{{ site.twitter_username }}</span>
+    </a>
+  </li>
+</ul>
