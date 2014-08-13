@@ -1,0 +1,24 @@
+title: ':soy_milk:'
+description: 頑張ります
+url: 'http://blog.hrysd.org'
+twitter_username: hrysd
+github_username:  hrysd
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+markdown: redcarpet
+
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - autolink
+
+highlighter: rouge
+
+permalink: pretty
+
+sass:
+  sass_dir: assets/stylesheets

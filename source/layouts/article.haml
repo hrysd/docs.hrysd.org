@@ -1,9 +1,0 @@
-- content_for :title do
-  = current_article.titl
--  wrap_layout :layout do
-  %article
-    %header
-      %h2= current_article.title
-      %time= current_article.date.strftime('%Y-%m-%d (%a)')
-    .content
-      = current_article.body

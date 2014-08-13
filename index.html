@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class='articles'>
+  {% for post in site.posts %}
+    <article>
+      <header>
+        <h1>
+          <a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
+        </h1>
+        <time date-time='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%b %d, %Y" }}</time>
+      </header>
+
+      <section class='article-content'>
+        {{ post.content | truncate: 300 }}
+      </section>
+      <a class="post-link" href="{{ post.url }}">read more</a>
+    </article>
+  {% endfor %}
+</div>

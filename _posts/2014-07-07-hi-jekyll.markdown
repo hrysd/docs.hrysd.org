@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "Hi, Jekyll!"
+date:   2014-07-07 00:55:50
+categories: jekyll
+---
+
+Jekyll を使ってみたので調べたこと流れをメモした。
+
+### ビルドするまで
+
+```
+$ mkdir static_site && cd static_site
+$ bundle init
+$ vim Gemfile # Gemfile に jekyll を追加
+
+$ bundle install
+$ bundle exec jekyll new . --force
+$ bundle exec build # _site 以下にいろいろ吐き出される
+```
+
+### _site にまとめられたくないものを指定する
+
+例えば vendor/bundle に gem を入れている場合、`_site` に吐き出さないものとして指定しおく必要がある
+
+```yaml
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+```
+
+## Syntax Highlight に rouge を使う
+
+- Gemfile
+
+```ruby
+gem 'rouge'
+```
+
+```yaml
+highlighter: rouge
+```
+
+## Markdown の parser として redcarpet を使う
+
+```yaml
+markdown: redcarpet
+
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - autolink
+```
+
+## Assets Pipeline を使う
+
+gem `jekyll-assets` を使用する。
+
+- `_config.yml`
+
+```yaml
+gems:
+  - jekyll-assets
+```
+
+デフォルトで `_assets` のディレクトを見る模様。
