@@ -1,6 +1,13 @@
-title: ':soy_milk:'
-description: 頑張ります
-url: 'http://blog.hrysd.org'
+title: ':soymilk:'
+
+description: 元液体のブログ
+keywords:
+  - hrysd
+  - soymilk
+  - 豆乳
+
+url: 'http://docs.hrysd.org'
+
 twitter_username: hrysd
 github_username:  hrysd
 

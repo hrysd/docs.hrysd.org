@@ -7,7 +7,7 @@ categories: jekyll
 
 Jekyll を使ってみたので調べたこと流れをメモした。
 
-### ビルドするまで
+## ビルドするまで
 
 ```
 $ mkdir static_site && cd static_site
@@ -16,18 +16,21 @@ $ vim Gemfile # Gemfile に jekyll を追加
 
 $ bundle install
 $ bundle exec jekyll new . --force
-$ bundle exec build # _site 以下にいろいろ吐き出される
 ```
 
-### _site にまとめられたくないものを指定する
-
-例えば vendor/bundle に gem を入れている場合、`_site` に吐き出さないものとして指定しおく必要がある
+例えば、vendor/bundle に gem を入れている場合 `_config.yml` にビルドの対象として含まないよう指定する必要がある。
 
 ```yaml
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+```
+
+そしてビルド。 `_site` 以下にファイルが生成されているのが確認できる。
+
+```
+$ bundle exec jekyll build # or serve
 ```
 
 ## Syntax Highlight に rouge を使う
@@ -65,3 +68,17 @@ gems:
 ```
 
 デフォルトで `_assets` のディレクトを見る模様。
+
+##  read more
+
+liquid  の truncate を使用する
+
+```html
+&#123;&#123; post.content | truncate: 300 &#125;&#125;
+
+<a href="{{ post.url }}">read more</a>
+```
+
+## 最後に
+
+ちょっと調べたけど、結局面倒になって使わなかった機能が多々ある...
