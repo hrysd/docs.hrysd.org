@@ -11,14 +11,20 @@
   time
     color: $sub-font-color
 
+  header
+    h1, h2
+      display: inline
+
+    time
+      margin-left: 10px
+
   section.articles
     article
       &:not(:first-child)
         margin-top: 30px
 
-      header
-        h2
-          display: inline
 
-        time
-          margin-left: 10px
+  article.post
+    header
+      padding-bottom: 10px
+      border-bottom: 1px solid $sub-font-color
