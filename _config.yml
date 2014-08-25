@@ -13,6 +13,8 @@ exclude:
   - Gemfile.lock
   - vendor
 
+permalink: /:year/:month/:day/:title/
+
 markdown: redcarpet
 
 redcarpet:
@@ -21,8 +23,6 @@ redcarpet:
     - autolink
 
 highlighter: rouge
-
-permalink: pretty
 
 sass:
   sass_dir: assets/stylesheets
