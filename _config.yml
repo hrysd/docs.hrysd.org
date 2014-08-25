@@ -8,9 +8,6 @@ keywords:
 
 url: 'http://docs.hrysd.org'
 
-twitter_username: hrysd
-github_username:  hrysd
-
 exclude:
   - Gemfile
   - Gemfile.lock
