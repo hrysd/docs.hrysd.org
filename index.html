@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class='articles'>
+  {% for post in site.posts %}
+    <article>
+      <header>
+        <h2>
+          <a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
+        </h2>
+        <time date-time='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%b %d, %Y" }}</time>
+      </header>
+    </article>
+  {% endfor %}
+</section>
