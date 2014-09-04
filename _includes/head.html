@@ -12,4 +12,8 @@
     <link rel='stylesheet' href='{{ "/assets/stylesheets/drawic.css" }}'>
     <link rel='stylesheet' href='{{ "/assets/stylesheets/highlight.css" }}'>
     <link rel='stylesheet' href='{{ "/assets/stylesheets/application.css" }}'>
+
+    {% if site.safe %}
+      {% include google_analytics.html %}
+    {% endif %}
 </head>
