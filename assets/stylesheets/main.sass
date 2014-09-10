@@ -23,12 +23,16 @@
       &:not(:first-child)
         margin-top: 30px
 
-
   article.post
     header
       padding-bottom: 10px
       border-bottom: 1px solid $sub-font-color
 
+    img
+      width: 50%
+
+      @media screen and (max-width: $mobile)
+        width: 100%
 
     section.social
       margin-top: 30px

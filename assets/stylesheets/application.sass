@@ -9,6 +9,8 @@ $sub-font-color: #90a4ae
 
 $code-block: #eceff1
 
+$mobile: 600px
+
 @import header
 @import main
 @import footer
@@ -20,6 +22,9 @@ body
   background: $main-color
   height: 100%
   color: $font-color
+
+  @media screen and (max-width: $mobile)
+    font-size: 80%
 
 a
   color: $font-color
@@ -34,6 +39,9 @@ a
 pre
   margin: 0px
   white-space: pre-wrap
+
+code
+  word-wrap: break-word
 
 .highlight
   border-radius: 4px
