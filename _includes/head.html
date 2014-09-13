@@ -11,9 +11,11 @@
     <link rel='canonical' href='{{ page.url | replace: "index.html", "" | prepend: site.baseurl | prepend: site.url }}'>
     <link rel='alternate' href='{{ "/feed.xml" | prepend: site.baseurl }}' type='application/rss+xml' title='RSS'>
 
-    <link rel='stylesheet' href='{{ "/assets/stylesheets/drawic.css" }}'>
-    <link rel='stylesheet' href='{{ "/assets/stylesheets/highlight.css" }}'>
-    <link rel='stylesheet' href='{{ "/assets/stylesheets/application.css" }}'>
+    <link rel='shortcut icon' href='/assets/images/favicon.png'>
+
+    <link rel='stylesheet' href='/assets/stylesheets/drawic.css'>
+    <link rel='stylesheet' href='/assets/stylesheets/highlight.css'>
+    <link rel='stylesheet' href='/assets/stylesheets/application.css'>
 
     {% if site.safe %}
       {% include google_analytics.html %}
