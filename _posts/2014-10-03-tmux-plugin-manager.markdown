@@ -5,7 +5,7 @@ date:   2014-10-03 17:00:00
 categories: tmux
 ---
 
-tmux のプラグインを `.tmux.conf` で管理できる [tpm(Tmux Plugin Manager)](https://github.com/tmux-plugins/tp://github.com/tmux-plugins/tpm) を使いはいじめてみた。
+tmux のプラグインを `.tmux.conf` で管理できる [tpm(Tmux Plugin Manager)](https://github.com/tmux-plugins/tp://github.com/tmux-plugins/tpm) を使いはじめてみた。
 
 ## Installation
 
