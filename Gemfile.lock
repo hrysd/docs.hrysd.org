@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jekyll/jekyll.git
-  revision: 98b5ff0d1748e71052679fabf1f356cc8ef8ba46
+  revision: cae5958362e9e7bbfd6e461aae2758d93aef1a5a
   specs:
     jekyll (2.4.0)
       classifier-reborn (~> 2.0)
@@ -60,7 +60,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.1.2)
-    rouge (1.7.1)
+    rouge (1.7.2)
     safe_yaml (1.0.4)
     sass (3.4.5)
     timers (4.0.1)
