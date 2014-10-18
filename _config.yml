@@ -13,6 +13,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
+  - Rakefile
 
 permalink: /:year/:month/:day/:title/
 
