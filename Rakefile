@@ -14,7 +14,7 @@ namespace :post do
       f.puts '---'
       f.puts 'layout: post'
       f.puts "title: #{args[:title]}"
-      f.puts "datae: #{now.strftime('%T')}"
+      f.puts "date: #{now.strftime('%Y-%m-%d %T')}"
       f.puts 'category:'
       f.puts "---"
     end
