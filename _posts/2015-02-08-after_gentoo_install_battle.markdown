@@ -46,3 +46,7 @@ categories: misc
 ## 最後に
 
 SystemRescueCD を USBメモリ に焼けなかったけど Gentoo のインストールはできました（まだ終わってない）
+
+## 追記
+
+USBメモリ の容量は 16GB もいらない
