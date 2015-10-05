@@ -84,7 +84,7 @@ Rust を動かす環境でお悩みの際は試していただけると!!
 
 ## 合わせて読みたい
 
-[DockerでHerokuでPerlが動いたぞ!!!](http://hitode909.hatenablog.com/entry/2015/05/07/200611)
-[DockerでHerokuでmrubyが動いたぞ!!1](http://blog.kentarok.org/entry/2015/05/08/004452)
-Herokuの'docker:release'の動き](http://deeeet.com/writing/2015/05/07/heroku-docker/)
-[Introducing 'heroku docker:release': Build & Deploy Heroku Apps with Docker](https://blog.heroku.com/archives/2015/5/5/introducing_heroku_docker_release_build_deploy_heroku_apps_with_docker)
+- [DockerでHerokuでPerlが動いたぞ!!!](http://hitode909.hatenablog.com/entry/2015/05/07/200611)
+- [DockerでHerokuでmrubyが動いたぞ!!1](http://blog.kentarok.org/entry/2015/05/08/004452)
+- [Herokuの'docker:release'の動き](http://deeeet.com/writing/2015/05/07/heroku-docker/)
+- [Introducing 'heroku docker:release': Build & Deploy Heroku Apps with Docker](https://blog.heroku.com/archives/2015/5/5/introducing_heroku_docker_release_build_deploy_heroku_apps_with_docker)
