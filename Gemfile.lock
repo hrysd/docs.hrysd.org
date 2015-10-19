@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/jekyll/jekyll.git
-  revision: 9f4d4bbae03aae862bdd825ef3223ea538adbf79
+  revision: d63acc140db95f62e851b984005fb07701d97e98
   specs:
-    jekyll (3.0.0.pre.beta9)
+    jekyll (3.0.0.pre.beta10)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -33,7 +33,7 @@ GEM
     redcarpet (3.3.3)
     rouge (1.10.1)
     safe_yaml (1.0.4)
-    sass (3.4.18)
+    sass (3.4.19)
 
 PLATFORMS
   ruby
@@ -44,4 +44,4 @@ DEPENDENCIES
   rouge
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
