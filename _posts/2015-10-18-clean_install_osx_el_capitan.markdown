@@ -36,6 +36,7 @@ $ xcode-select ―-install
 
 Xcode の次は [Homebrew](http://brew.sh/index_ja.html)。
 El Capitan より Homebrew がインストール先に指定する `/usr/local` が云々という記事を見たので、今回からインストール先を`$HOME`にしてみた。
+加えて、諸事情でマルチユーザな環境を使用ないといけない場合でも `$HOME` だと影響を受けにくいと思う。
 ただ、`/usr/local` 以外にインストールする事自体オススメされていなようだけど気にしない。壊れたらクリーンインストールしましょう！
 
 - [El Capitan & Homebrew](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md#if-usrlocal-does-not-exist)
@@ -51,7 +52,7 @@ $ export PATH=$HOME/homebrew/bin:$PATH
 **Homebrew Cask**
 
 GUIを持ったアプリケーション向けに [Homebrew Cask](http://caskroom.io) を入れる。
-Homebrew Cask はインストールするアプリケーションを Homebrew とは異なり、`/opt/homebrew-cask/Caskroom` に入る。
+Homebrew Cask はインストールするアプリケーションを Homebrew とは異なり、`/opt/homebrew-cask/Caskroom` に入れる。
 前述の Homebrew 同様に`$HOME`以下にインストールするように指定した。
 これは、環境変数でオプションを永続化する事ができる。([参考](https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md#options))
 
