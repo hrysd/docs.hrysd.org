@@ -13,7 +13,9 @@ keywords:
 
 ## 動画
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X6IaCgJApgI" frameborder="0" allowfullscreen></iframe>
+<div class='youtube'>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/X6IaCgJApgI" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## 撮影機材
 
