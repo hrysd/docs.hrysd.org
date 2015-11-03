@@ -62,7 +62,7 @@ $ export HOMEBREW_CASK_OPTS=--binarydir=$HOME/bin --caskroom=$HOME/homebrew-cask
 $ brew install caskroom/cask/brew-cask
 ```
 
-**細いもの:**
+**細かいもの:**
 
 クリーンインストールは気持ちいだけでなくて、今までの環境を見直すのにも便利なので極度な自動化はしていない。
 正直めんどくさいけれども、手で入れる。
