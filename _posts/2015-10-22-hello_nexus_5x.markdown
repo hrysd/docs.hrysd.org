@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'GoPro を買ったので Nexus 5X の開封動画を撮ってみた'
-date:   2015-10-22 01:10:00
+date:   2015-10-22 01:10
 categories: Nexus
 keywords:
   - Nexus 5X
