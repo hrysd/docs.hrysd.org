@@ -4,7 +4,8 @@ title: 'aws-sdk-ruby でのクレデンシャルの扱い'
 date: 2016-04-25 23:00
 categories: AWS
 ---
-EC2 上で稼働する Rails アプリケーション上で [aws-sdk-ruby](https://github.com/aws/aws-sdk-ruby) にクレデンシャル情報を渡す話。
+
+EC2 で稼働する Rails アプリケーション上で [aws-sdk-ruby](https://github.com/aws/aws-sdk-ruby) にクレデンシャル情報を渡す話。
 
 ## バージョン
 
@@ -32,7 +33,7 @@ aws-sdk は暗黙的に以下の順序でクレデンシャル情報を探索す
   - EC2 インスタンスに割り当てた IAM ロールからクレデンシャル情報を取得する
   - [参考](http://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
 
-## アプリケーションに対してクレデンシャル情報を渡したか
+## 実際にアプリケーションに対してクレデンシャル情報をどう渡すか
 
 ステージング、プロダクションといった AWS 上で動くアプリケーションに関しては
 上記4番目の instance\_profile\_credentials を利用すればよさそう。
