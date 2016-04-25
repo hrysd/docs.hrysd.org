@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'aws-sdk でのクレデンシャルの扱い'
+title: 'aws-sdk-ruby でのクレデンシャルの扱い'
 date: 2016-04-02 00:00
 categories: AWS
 ---
-AWSのサービスを使用する [aws-sdk](https://github.com/aws/aws-sdk-ruby) にクレデンシャル情報を渡す話。
+EC2 上で稼働する Rails アプリケーション上で [aws-sdk-ruby](https://github.com/aws/aws-sdk-ruby) にクレデンシャル情報を渡す話。
 
 ## バージョン
 
-`aws-sdk (2.2.33)`
+`aws-sdk-ruby (2.2.33)`
 
 ## クレデンシャルの設定には優劣がある
 
@@ -32,10 +32,12 @@ aws-sdk は暗黙的に以下の順序でクレデンシャル情報を探索す
   - EC2 インスタンスに割り当てた IAM ロールからクレデンシャル情報を取得する
   - [参考](http://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
 
-## EC2インスタンスで稼働するアプリケーションでクレデンシャル情報をどう扱うか
+## アプリケーションに対してクレデンシャル情報を渡したか
 
 ステージング、プロダクションといった AWS 上で動くアプリケーションに関しては
 上記4番目の instance\_profile\_credentials を利用すればよさそう。
+
+なので
 
 - 開発環境（ローカル）
   - 各自のアカウントでトークンを発行
@@ -54,8 +56,8 @@ aws-sdk は暗黙的に以下の順序でクレデンシャル情報を探索す
 
 ```
 [hogehoge-development]
-aws_access_key_id = AWS_ACCESS_KEY_ID
-aws_secret_access_key = AWS_SECRET_ACCESS_KEY
+  aws_access_key_id = AWS_ACCESS_KEY_ID
+  aws_secret_access_key = AWS_SECRET_ACCESS_KEY
 ```
 
 - `config/initializers/aws\_sdk.rb`
