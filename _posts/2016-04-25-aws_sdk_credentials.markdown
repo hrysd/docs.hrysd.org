@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'aws-sdk-ruby でのクレデンシャルの扱い'
-date: 2016-04-02 00:00
+date: 2016-04-25 23:00
 categories: AWS
 ---
 EC2 上で稼働する Rails アプリケーション上で [aws-sdk-ruby](https://github.com/aws/aws-sdk-ruby) にクレデンシャル情報を渡す話。
