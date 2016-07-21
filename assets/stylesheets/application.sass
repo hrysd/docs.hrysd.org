@@ -7,7 +7,7 @@ $sub-color: #f8bbd0
 $font-color: #37474f
 $sub-font-color: #90a4ae
 
-$code-block: #eceff1
+$code-block: #f8f8f8
 
 $mobile: 600px
 
@@ -36,8 +36,14 @@ pre
 
 code
   word-wrap: break-word
+  border-radius: 4px
+  padding: 4px
+  background-color: $code-block
 
 .highlight
   border-radius: 4px
   padding: 10px
   background-color: $code-block
+
+  code
+    padding: 0
