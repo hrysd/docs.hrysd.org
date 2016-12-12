@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Tailor Brands でこのブログのロゴ作ってみた'
-date: 2016-12-10
+date: 2016-12-12 19:00
 categories: misc
 ---
 
