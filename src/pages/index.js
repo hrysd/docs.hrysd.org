@@ -16,7 +16,9 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" keywords={['blog', 'gatsby', 'javascript', 'react']} />
         <Bio />
-        {posts.map(({ node }) => {
+        {posts.map((post) => {
+          console.log(post)
+          const { node } = post;
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -25,7 +27,7 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link style={{ boxShadow: 'none' }} to={`${node.frontmatter.date}${node.fields.slug}`}>
                   {title}
                 </Link>
               </h3>
@@ -56,7 +58,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY/MM/DD")
             title
           }
         }

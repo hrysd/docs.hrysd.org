@@ -1,6 +1,10 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+function createPath(date, slug) {
+   return [date, slug].join('') ;
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -16,8 +20,10 @@ exports.createPages = ({ graphql, actions }) => {
                   fields {
                     slug
                   }
+
                   frontmatter {
                     title
+                    date(formatString: "YYYY/MM/DD")
                   }
                 }
               }
@@ -38,7 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
           const next = index === 0 ? null : posts[index - 1].node;
 
           createPage({
-            path: post.node.fields.slug,
+            path: createPath(post.node.frontmatter.date, post.node.fields.slug),
             component: blogPost,
             context: {
               slug: post.node.fields.slug,
