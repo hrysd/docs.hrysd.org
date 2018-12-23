@@ -26,7 +26,7 @@ categories: misc
 
 ドメイン自体は お名前.com で取っていて、DNSは [Dozens](https://dozens.jp) を使用しています。(お名前.com の ４つに別れた IP 入力フォームがつらい)
 
-![onamae](/assets/images/onamae_form.png)
+![onamae](./onamae_form.png)
 
 ## TODO 的な
 

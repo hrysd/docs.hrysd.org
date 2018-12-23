@@ -11,7 +11,7 @@ keywords:
 
 先日 Nexus6 をなくしてツライ思いをしたので、携帯電話、モバイル端末をなくした時の便利かもしれないリンク集をまとめておきます。
 
-![lost_nexus6](/assets/images/lost_nexus6.png)
+![lost_nexus6](./lost_nexus6.png)
 
 ### Android を無くした
 

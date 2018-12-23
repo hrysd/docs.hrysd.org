@@ -7,7 +7,7 @@ categories: misc
 
 [Tailor Brands](https://www.tailorbrands.com) でこのブログのロゴを作ってみたのでこのブログの見た目を更新した。
 
-<img src='/assets/images/logo.png'  style='display:block;margin:0 auto;width: auto;'/>
+![logo.png](./logo.png)
 
 ロゴ名、ロゴが何ベースなのか、どっちのフォントが好みかといったいくつかの設問に答えるだけで簡単に作成できた。
 せっかくなので完成したロゴは [Basic](https://www.tailorbrands.com/pricing) プランで購入したんだけど、`.eps` なファイルも付いてきたけど開けるアプリケーション持っていないという...

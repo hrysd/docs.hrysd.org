@@ -9,7 +9,7 @@ categories: Android
 
 普段 [Nexus5X](http://docs.hrysd.org/2015/10/22/hello-nexus-5x/) を使用しているので、せめて自分の端末でくらいは綺麗に見たかった。
 
-![theme-color](/assets/images/theme-color.png)
+![theme-color](./theme-color.png)
 
 ## 方法
 

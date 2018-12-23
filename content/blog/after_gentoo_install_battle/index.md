@@ -41,7 +41,7 @@ categories: misc
 
 ## 参加者の声
 
-![](/assets/images/live_cd.png)
+![](./live_cd.png)
 
 ## 最後に
 

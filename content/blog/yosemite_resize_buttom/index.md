@@ -13,7 +13,7 @@ OS X Yosemite から緑のボタンの挙動が変わった気がする。
 
 - `option` キーを押す
 
-![resize_button](/assets/images/resize_button.gif)
+![resize_button](./resize_button.gif)
 
 ## 最後に
 

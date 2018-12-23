@@ -11,7 +11,7 @@ Google Play から買った Nexus6 の画面を割ってしまったので修理
 
 トイレをしようとして、ズボンのポケットから落とした。
 
-![broken_nexus](/assets/images/broken_nexus6.jpg)
+![broken_nexus](./broken_nexus6.jpg)
 
 # 修理に出す
 
@@ -32,7 +32,7 @@ Motorolaに電話し、修理したいと伝えると端末のIMEI番号と名�
 
 さらに2日くらいたって、綺麗になった Nexus6 が届いた。
 
-![nexus6](/assets/images/nexus6.jpg)
+![nexus6](./nexus6.jpg)
 
 # 会計
 

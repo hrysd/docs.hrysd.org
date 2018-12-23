@@ -72,7 +72,7 @@ export default lambda((e, ctx) => {
 
 CloudWatch のスケジュールイベントをトリガーに設定した。
 
-![lambda](/assets/images/lambda.png)
+![lambda](./lambda.png)
 
 ## はまった点
 

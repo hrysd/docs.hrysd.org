@@ -15,7 +15,7 @@ categories: ruby
 
 **イメージ**
 
-![exception_notification-idobata](/assets/images/adapt_to_brand_new_idobata.png)
+![exception_notification-idobata](./adapt_to_brand_new_idobata.png)
 
 ## 最後に
 
