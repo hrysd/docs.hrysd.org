@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'DockerでHerokuでRustが動いたぞ!!!'
-date:   2015-05-11 18:00
+date:   2015-05-11 18:00:00
 categories: rust
 keywords:
   - Heroku

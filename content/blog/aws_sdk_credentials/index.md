@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'aws-sdk-ruby でのクレデンシャルの扱い'
-date: 2016-04-25 23:00
+date: 2016-04-25 23:00:00
 categories: AWS
 ---
 

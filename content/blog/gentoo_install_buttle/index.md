@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Gentoo Install Battle'
-date:   2015-01-22 23:00
+date:   2015-01-22 23:00:00
 categories: misc
 ---
 

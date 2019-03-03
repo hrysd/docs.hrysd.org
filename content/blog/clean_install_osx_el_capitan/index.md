@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'OS X El Capitan をクリーンインストール'
-date:   2015-10-18 17:00
+date:   2015-10-18 17:00:00
 categories: Mac
 keywords:
   - El Capitan

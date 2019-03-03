@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'スマートフォン、モバイル端末を無くした時のリンク集'
-date:   2015-05-02 18:00
+date:   2015-05-02 18:00:00
 categories: misc
 keywords:
   - Nexus6

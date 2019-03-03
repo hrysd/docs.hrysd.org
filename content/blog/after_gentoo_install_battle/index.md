@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Gentoo Install Battle を開催しました'
-date:   2015-02-08 17:00
+date:   2015-02-08 17:00:00
 categories: misc
 ---
 

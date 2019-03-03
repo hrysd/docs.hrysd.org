@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'class_eval内でのclass定義でのwarning'
-date:   2015-03-02 11:00
+date:   2015-03-02 11:00:00
 categories: ruby
 ---
 

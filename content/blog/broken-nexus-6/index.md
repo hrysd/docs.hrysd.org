@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Nexus 6 の画面を割ったので修理した'
-date:   2015-02-25 01:30
+date:   2015-02-25 01:30:00
 categories: nexus
 ---
 

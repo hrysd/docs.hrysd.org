@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'ブログに theme-color を設定'
-date: 2016-03-02 23:00
+date: 2016-03-02 23:00:00
 categories: Android
 ---
 

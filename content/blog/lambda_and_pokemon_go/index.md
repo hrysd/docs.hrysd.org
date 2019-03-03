@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'AWS Lambda を使って Pokemon Go のリリースを検知する'
-date: 2016-07-22 01:00
+date: 2016-07-22 01:00:00
 categories: AWS
 ---
 

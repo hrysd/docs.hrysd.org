@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'show_your_cookies という gem を作りました'
-date:   2015-04-07 21:00
+date:   2015-04-07 21:00:00
 categories: ruby
 ---
 

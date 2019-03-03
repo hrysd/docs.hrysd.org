@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'お名前.com から Amazon Route53 へドメインを移管した'
-date: 2016-06-19 09:00
+date: 2016-06-19 09:00:00
 categories: AWS
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Homebrew から入れた ImageMagick で rsvg-convert コマンドを使う'
-date:   2015-04-10 11:00
+date:   2015-04-10 11:00:00
 categories: misc
 ---
 

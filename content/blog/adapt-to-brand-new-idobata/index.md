@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'exception_notification-idobata を 1.0.0 にした'
-date:   2015-04-02 19:00
+date:   2015-04-02 19:00:00
 categories: ruby
 ---
 
