@@ -1,4 +1,3 @@
-/*global __PATH_PREFIX__*/
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
