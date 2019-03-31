@@ -1,24 +1,25 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
+import XFooter from '../components/x-footer'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" keywords={['blog', 'gatsby', 'javascript', 'react']} />
-        <Bio />
-        {posts.map((post) => {
-          console.log(post)
-          const { node } = post;
+        <SEO
+          title="All posts"
+          keywords={['blog', 'gatsby', 'javascript', 'react']}
+        />
+        {posts.map(post => {
+          const { node } = post
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -27,7 +28,10 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={`${node.frontmatter.date}${node.fields.slug}`}>
+                <Link
+                  style={{ boxShadow: 'none' }}
+                  to={`${node.frontmatter.date}${node.fields.slug}`}
+                >
                   {title}
                 </Link>
               </h3>
@@ -36,6 +40,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+        <XFooter />
       </Layout>
     )
   }

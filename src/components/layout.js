@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 
 export default ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
@@ -25,25 +25,22 @@ export default ({ location, title, children }) => {
     }
   `)
 
-  const style = {
-    ...scale(1),
-    marginBottom: rhythm(1.5),
-    marginTop: 0,
-  }
+  const headerStyle = { display: 'flex', alignItems: 'center' };
+  const h1Style = { fontSize: 20, marginTop: 0, marginBottom: 0 }
 
   const header = (
-    <header>
+    <header style={headerStyle}>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={data.site.siteMetadata.author}
         style={{
           marginRight: rhythm(1 / 2),
-          marginBottom: 0,
           minWidth: 50,
-          borderRadius: '100%',
+          marginBottom: 0,
+          borderRadius: '100%'
         }}
       />
-      <h1 style={style}>
+      <h1 style={h1Style}>
         <Link
           style={{
             boxShadow: 'none',

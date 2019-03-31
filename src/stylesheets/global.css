@@ -1,0 +1,43 @@
+.gatsby-highlight {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 10px;  
+}
+
+pre {
+  overflow-x: scroll;
+  font-size: 14px;
+  margin-bottom: 0px !important;
+}
+
+.Footer-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.Footer-profileImage {
+  margin-right: 10px;
+  margin-bottom: 0px;
+  min-width: 50;
+  border-radius: 100%;
+}
+
+.Footer-profile dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px; 
+}
+
+.Footer-profile dt {
+  flex: 0 0 30%
+}
+
+.Footer-profile dd {
+  flex: 0 0 70%;
+  margin-bottom: 0px;
+}
+
+.Footer-poweredBy {
+  text-align: center;
+}
