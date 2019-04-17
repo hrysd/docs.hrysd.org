@@ -7,9 +7,9 @@ import { rhythm } from '../utils/typography'
 export default ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
     query {
-      avatar: file(absolutePath: { regex: "/icon.png/" }) {
+      avatar: file(absolutePath: { regex: "/logo.png/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 170, height: 138) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -25,21 +25,11 @@ export default ({ location, title, children }) => {
     }
   `)
 
-  const headerStyle = { display: 'flex', alignItems: 'center' };
+  const headerStyle = { display: 'flex', alignItems: 'center', justifyContent: 'center' };
   const h1Style = { fontSize: 20, marginTop: 0, marginBottom: 0 }
 
   const header = (
     <header style={headerStyle}>
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={data.site.siteMetadata.author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          minWidth: 50,
-          marginBottom: 0,
-          borderRadius: '100%'
-        }}
-      />
       <h1 style={h1Style}>
         <Link
           style={{
@@ -49,7 +39,14 @@ export default ({ location, title, children }) => {
           }}
           to={'/'}
         >
-          {title}
+      <Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={title}
+        style={{
+          minWidth: 50,
+          marginBottom: 0,
+        }}
+      />
         </Link>
       </h1>
     </header>
