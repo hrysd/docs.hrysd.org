@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
-
 import { rhythm } from '../utils/typography'
+import XFooter from '../components/x-footer';
 
 export default ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
@@ -58,11 +58,20 @@ export default ({ location, title, children }) => {
         marginLeft: 'auto',
         marginRight: 'auto',
         maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+  
+
       }}
     >
       {header}
-      {children}
+      <div style={{
+        background: 'white',
+        boxShadow: '0 0 2px rgba(0,0,0,0.1)',
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+      }}>
+        {children}
+      </div>
+
+      <XFooter />
     </div>
   )
 }

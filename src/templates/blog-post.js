@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import XFooter from '../components/x-footer'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -38,8 +37,6 @@ export default ({ location, pageContext, data }) => {
       <hr style={{ color: '#90a4ae' }} />
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr style={{ color: '#90a4ae' }} />
-
-      <XFooter />
     </Layout>
   );
 }

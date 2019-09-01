@@ -40,7 +40,6 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-        <XFooter />
       </Layout>
     )
   }
