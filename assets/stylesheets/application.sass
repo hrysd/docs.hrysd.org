@@ -11,20 +11,23 @@ $code-block: #f8f8f8
 
 $mobile: 600px
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap')
+
 @import header
 @import main
 @import footer
 
+
+*
+  box-sizing: border-box
+
 html
-  font-family: 'Hiragino Maru Gothic ProN', Meiryo, sans-serif
+  font-family: 'Noto Sans JP', sans-serif
 
 body
-  background: $main-color
+  background: white
   color: $font-color
-
-  @media screen and (max-width: $mobile)
-    font-size: 80%
-    margin: 0px
+  margin: 0px
 
 a
   color: $font-color

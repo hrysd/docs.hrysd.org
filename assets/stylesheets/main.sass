@@ -1,13 +1,11 @@
 .content
-  border-top: 2px solid $sub-color
-  border-bottom: 2px solid $sub-color
+  padding: 1rem
   background-color: white
-  padding: 30px
   margin: 0 auto
-  max-width: 980px
+  max-width: 800px
 
   @media screen and (max-width: $mobile)
-    margin: 0px
+    padding: 0.5rem
 
   a
     color: $font-color !important
@@ -21,19 +19,39 @@
       display: inline
 
     time
-      margin-left: 10px
+      display: inline-block
+      min-width: 7rem
+      margin-right: 10px
 
   section.articles
     article
-      &:not(:first-child)
-        margin-top: 15px
-        padding-top: 30px
-        border-top: 1px solid $sub-font-color
+      header
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding: 1rem 0
+
+        @media screen and (max-width: $mobile)
+          align-items: baseline
+          flex-direction: column
+
+        h2
+          margin: 0
+
+      &:not(:last-child)
+        border-bottom: 2px solid $sub-font-color
+
+        &:hover
+          border-color: $main-color
+          transition: border-color 1.0s
 
   article.post, article.page
     header
       padding-bottom: 10px
       border-bottom: 1px solid $sub-font-color
+
+      time
+        margin-left: 1rem
 
     img
       width: 50%
@@ -46,6 +64,9 @@
 
     section.social
       margin-top: 30px
+
+    p
+      line-height: 1.5rem
 
     // http://h2ham.net/youtube-responsive
     .youtube
