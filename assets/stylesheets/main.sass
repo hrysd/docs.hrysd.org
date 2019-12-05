@@ -8,7 +8,7 @@
     padding: 0.5rem
 
   a
-    color: $font-color !important
+    color: $font-color
     text-decoration: none
 
   time
@@ -56,9 +56,21 @@
     header
       padding-bottom: 10px
       border-bottom: 1px solid $sub-font-color
+      display: flex
+      flex-direction: row
+      align-items: center
+      padding: 1rem 0
 
-      time
-        margin-left: 1rem
+      @media screen and (max-width: $mobile)
+        align-items: baseline
+        flex-direction: column
+
+      h2
+        margin: 0
+
+    section
+      h2
+        font-size: 1.2rem
 
     img
       width: 50%
@@ -67,6 +79,8 @@
         width: 100%
 
     a
+      color: $link-color
+      word-break: break-word
       text-decoration: underline
 
     section.social
