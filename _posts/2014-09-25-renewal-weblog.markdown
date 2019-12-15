@@ -7,7 +7,7 @@ categories: misc
 
 ブログを [Jekyll](https://github.com/jekyll/jekyll) で新たに作り、ドメインを変更しました。
 
-リポジトリは[こちら](https://github.com/hrysd/docs.hrysd.org)。
+リポジトリは[こちら](https://github.com/hrysd/diary.yoshida.dev)。
 
 ## なぜ Jekyll
 

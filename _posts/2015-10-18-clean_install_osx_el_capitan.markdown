@@ -95,4 +95,4 @@ $ nodebrew install-binary stable
 
 ## 最後に
 
-[去年の今日に Yosemite をクリーンインストールしていた](http://docs.hrysd.org/2014/10/18/clean_install_osx_yosemite/)ようなので、今日はインストールDay
+[去年の今日に Yosemite をクリーンインストールしていた](http://diary.yoshida.dev/2014/10/18/clean_install_osx_yosemite/)ようなので、今日はインストールDay
