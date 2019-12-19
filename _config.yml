@@ -17,6 +17,8 @@ exclude:
 
 permalink: /:year/:month/:day/:title/
 
+timezone: Asia/Tokyo
+
 markdown: redcarpet
 
 redcarpet:
