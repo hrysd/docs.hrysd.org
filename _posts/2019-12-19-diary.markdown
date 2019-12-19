@@ -1,0 +1,26 @@
+---
+layout: post
+title: '2019-12-19: ブログの見た目と VSCode'
+date: 2019-12-19 23:00
+categories: diary
+---
+
+## ブログの見た目を変えた
+
+一番古い記事が 2014 年だったので 5 年ぶりくらいに見た目が変わったんだろうと思う。
+
+テンプレートみたいなの使うのがベストなんだろうけど、このブログくらいは自分でやりたいという気持ちでいじった。見た目以外にも気になるところが山ほどあるんだけどもそこは一旦無視。
+
+ブログを書こうと思っても、ブログ本体のことが気になってしまい何もしない。というのを続けて 3 年くらい何も書いていなかったので再開してみた。
+
+## Mixed content
+
+このブログは [Netlify](https://www.netlify.com/) でホスティングしているんだけど、ビルドのたびに Mixed content  があるよ〜と教えてくれるので便利（まだ直していない）。
+
+Mixed Conent とは関係がないのだけれども、このブログのソースコードに [Securiy Alerts](https://github.com/hrysd/docs.hrysd.org/network/alerts) も出ているからそれもやらないと。
+
+## Visual Studio Code で PHP を書く
+
+仕事で PHP を書く機会があるので、VSCode で PHP を書く環境を整えている。
+
+今のところ入れたプラグインは [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) だけなんだけど、コードの補完も便利だし、[PHPDoc](https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc.md) に準拠したコメントを書いておくとなおのこと便利で便利（語彙）。こまかい良さは別途書ければいいな。
