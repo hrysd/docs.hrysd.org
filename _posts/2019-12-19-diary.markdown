@@ -1,9 +1,11 @@
 ---
 layout: post
-title: '2019-12-19: ブログの見た目と VSCode'
+title: 2019-12-19
 date: 2019-12-19 23:00
 categories: diary
 ---
+
+ブログの見た目と VSCode。
 
 ## ブログの見た目を変えた
 
