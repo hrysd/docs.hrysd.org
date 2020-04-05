@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gmail を Discord に通知する
+title: Gmail 宛のメールを Discord に通知する
 date: 2020-04-06 01:00
 categories: diary
 ---
