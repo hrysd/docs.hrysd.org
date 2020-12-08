@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "2020-12-09: Windows 10 のライセンスを買った"
+title: "Windows 10 のライセンスを買った"
 date: 2020-12-09 01:00
-categories: diary
+categories: Windows
 ---
 
 以前から試してみたい気持ちがあり、Gentoo Linux を入れて使っていた x280 の emerge 業が溜まり解消するのも大変そうだったので Windows をインストールした。
