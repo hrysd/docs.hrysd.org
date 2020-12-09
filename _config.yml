@@ -12,11 +12,11 @@ permalink: /:year/:month/:day/:title/
 
 timezone: Asia/Tokyo
 
-markdown: redcarpet
+markdown: CommonMark
 
-redcarpet:
+commonmark:
+  options: ['UNSAFE']
   extensions:
-    - fenced_code_blocks
     - autolink
 
 highlighter: rouge
