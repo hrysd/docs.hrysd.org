@@ -6,24 +6,17 @@ keywords:
   - soymilk
   - 豆乳
 
-url: 'http://docs.hrysd.org'
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - README.md
-  - Rakefile
+url: 'https://docs.hrysd.org'
 
 permalink: /:year/:month/:day/:title/
 
 timezone: Asia/Tokyo
 
-markdown: redcarpet
+markdown: CommonMark
 
-redcarpet:
+commonmark:
+  options: ['UNSAFE']
   extensions:
-    - fenced_code_blocks
     - autolink
 
 highlighter: rouge

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'rouge'
-gem 'redcarpet'
+
+group :jekyll_plugins do
+  gem 'jekyll-commonmark', github: 'jekyll/jekyll-commonmark'
+end
