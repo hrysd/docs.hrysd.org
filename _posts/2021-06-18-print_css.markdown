@@ -1,0 +1,79 @@
+---
+layout: post
+title: 印刷用 CSS を書くときのメモ
+date: 2021-06-18 01:00
+categories: css
+---
+
+## なにこれ
+
+印刷用の CSS を書いたときのテキストファイルが残っていたので、次書くことがあった時のインデックスとして使おうと思い、ブログにした。
+
+## メモ
+
+### 印刷用のスタイルを書くときのセレクタとか
+
+- [@page](https://developer.mozilla.org/en-US/docs/Web/CSS/@page)
+- [@media](https://developer.mozilla.org/ja/docs/Web/CSS/@media)
+
+### 印刷時に CSS がどう反映されるか知りたい
+
+デベロッパーツールから模倣できる。
+
+- https://developers.google.com/web/tools/chrome-devtools/css/print-preview
+
+### 印刷用の CSS を探したい
+
+本来 `grep` 等を駆使してやるのが簡単なんだけど、以下のようなコードをブラウザのコンソールに流すことでも取得できるかも。
+
+```js
+const styleSheets = Array.from(document.styleSheets).filter(
+  (styleSheet) => !styleSheet.href || styleSheet.href.startsWith(window.location.origin)
+)
+
+for (let s of styleSheets) {
+  for (let c of Array.from(s.cssRules)) {
+    if(c.cssText.includes('@page') || c instanceof CSSPageRule) {
+      console.log(c)
+    }
+  }
+}
+```
+
+### ページ番号を振りたい
+
+ブラウザが採番する数字もあるんだけど、それとは別のが欲しい場合なんかに。
+CSS で振るのが簡単かなぁという印象。これと `position` あたりを組み合わせて使う。
+
+- https://developer.mozilla.org/ja/docs/Web/CSS/counter-reset
+
+### 背景色を反映させる
+
+ブラウザの印刷ウィンドウから有効にできる。
+
+- Google Chrome
+  - オプション -> 背景のグラフィック
+- FireFox
+  - 詳細設定 -> 背景画像を印刷する
+- Edge
+  - その他の設定 -> 背景のグラフィックス
+
+色味の調整には以下のプロパティが効くっぽいけど、検証しきれていない。
+
+```css
+* {
+  color-adjust: exact;
+}
+```
+
+- https://developer.mozilla.org/ja/docs/Web/CSS/color-adjust
+
+### 改ページ
+
+`page-break` を使う
+
+- https://developer.mozilla.org/ja/docs/Web/CSS/break-after
+
+## 最後に
+
+もっとあるかもしれないが、手元のテキストファイルはここで力尽きていた。
