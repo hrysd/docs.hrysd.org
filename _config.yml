@@ -18,6 +18,7 @@ commonmark:
   options: ['UNSAFE']
   extensions:
     - autolink
+    - table
 
 highlighter: rouge
 
